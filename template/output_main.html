@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+<div id="c">
+{{content|safe}}
+</div>
+
+
+<script>
+    var html = document.getElementById('c');
+    console.log({{content}})
+    html.innerHtml={{content}};
+
+
+</script>
+</body>
+</html>
