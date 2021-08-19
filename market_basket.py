@@ -16,9 +16,6 @@ from mlxtend.frequent_patterns import association_rules
 
 
 # converting all positive values to 1 and everything else to 0
-
-
-
 def my_encode_units(x):
     if x <= 0:
         return 0
@@ -62,7 +59,6 @@ def marketBasket(min_support, country):
     # # Training Model
     # Generating frequent itemsets
     my_frequent_itemsets = apriori(my_basket_sets, min_support=float(min_support), use_colnames=True)
-
 
     # generating rules
     my_rules = association_rules(my_frequent_itemsets, metric="lift", min_threshold=1)
