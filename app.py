@@ -22,10 +22,10 @@ def index():
     return render_template('index.html', title=title)
 
 
-@app.route('/about')
-def about():
-    names = ["Ram", "Shyam", "Hari"]
-    return render_template('about.html', names=names)
+# @app.route('/about')
+# def about():
+#     names = ["Ram", "Shyam", "Hari"]
+#     return render_template('about.html', names=names)
 
 
 @app.route('/form', methods=['POST'])
